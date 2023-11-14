@@ -1,5 +1,6 @@
 package com.plrs.coursesinfo.cli;
 
+import com.plrs.coursesinfo.cli.service.CourseRetrieverService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,6 +24,11 @@ public class CourseRetriever {
 
     private static void retrieveCourses(String authorId) {
         LOG.info("Retrieving courses for author '{}'", authorId);
+
+        CourseRetrieverService courseRetrieverService = new CourseRetrieverService();
+
+        String coursesToStore = courseRetrieverService.getCoursesFor(authorId);
+        LOG.info("Retrieve the following courses {}", coursesToStore);
     }
 
 }
