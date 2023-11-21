@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
+import static java.util.function.Predicate.not;
+
 public class CourseRetriever {
     private static final Logger LOG = LoggerFactory.getLogger(CourseRetriever.class);
 
@@ -30,7 +32,10 @@ public class CourseRetriever {
 
         CourseRetrieverService courseRetrieverService = new CourseRetrieverService();
 
-        List<PluralsightCourse> coursesToStore = courseRetrieverService.getCoursesFor(authorId);
+        List<PluralsightCourse> coursesToStore = courseRetrieverService.getCoursesFor(authorId)
+                .stream()
+                .filter(not(PluralsightCourse::isRetired))
+                .toList();
         LOG.info("Retrieve the following {} courses {}", coursesToStore.size(), coursesToStore);
     }
 

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95050019-8ca9-4b18-a8ab-cb70a9d2358d" name="Changes" comment="retrieve json by using HttpClient">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" afterDir="false" />
+    <list default="true" id="95050019-8ca9-4b18-a8ab-cb70a9d2358d" name="Changes" comment="return list of courses by jackson library">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/CourseRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/CourseRetriever.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/CourseRetrieverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/CourseRetrieverService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +97,9 @@
       <option name="presentableId" value="Default" />
       <updated>1699985548420</updated>
       <workItem from="1699985549639" duration="3419000" />
-      <workItem from="1700071814955" duration="5303000" />
+      <workItem from="1700071814955" duration="5517000" />
+      <workItem from="1700118465717" duration="643000" />
+      <workItem from="1700583481772" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="retrieve json by using HttpClient">
       <option name="closed" value="true" />
@@ -109,14 +109,34 @@
       <option name="project" value="LOCAL" />
       <updated>1699991847076</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="return list of courses by jackson library">
+      <option name="closed" value="true" />
+      <created>1700079956007</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700079956007</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="retrieve json by using HttpClient" />
-    <option name="LAST_COMMIT_MESSAGE" value="retrieve json by using HttpClient" />
+    <MESSAGE value="return list of courses by jackson library" />
+    <option name="LAST_COMMIT_MESSAGE" value="return list of courses by jackson library" />
   </component>
 </project>
