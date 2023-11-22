@@ -4,25 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95050019-8ca9-4b18-a8ab-cb70a9d2358d" name="Changes" comment="add &quot;not retired&quot; filter for courses">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/plrs/coursesinfo/cli/service/PluralsightCourseTest.java" afterDir="false" />
+    <list default="true" id="95050019-8ca9-4b18-a8ab-cb70a9d2358d" name="Changes" comment="return list of courses by jackson library">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/CourseRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/CourseRetriever.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
         <option value="Record" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -44,10 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "G:/JAVA/practice/test",
+    "last_opened_file_path": "G:/JAVA/practice/plrs-courses",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,14 +52,8 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.plrs.coursesinfo.cli.service" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.plrs.coursesinfo.cli.service" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.PluralsightCourseTest">
+  <component name="RunManager" selected="Application.CourseRetriever (2)">
     <configuration name="CourseRetriever (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.plrs.coursesinfo.cli.CourseRetriever" />
       <module name="plrs-courses" />
@@ -94,24 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PluralsightCourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="plrs-courses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.plrs.coursesinfo.cli.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.plrs.coursesinfo.cli.service" />
-      <option name="MAIN_CLASS_NAME" value="com.plrs.coursesinfo.cli.service.PluralsightCourseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PluralsightCourseTest" />
         <item itemvalue="Application.CourseRetriever (2)" />
         <item itemvalue="Application.CourseRetriever" />
       </list>
@@ -128,8 +99,7 @@
       <workItem from="1699985549639" duration="3419000" />
       <workItem from="1700071814955" duration="5517000" />
       <workItem from="1700118465717" duration="643000" />
-      <workItem from="1700583481772" duration="1074000" />
-      <workItem from="1700660330604" duration="2042000" />
+      <workItem from="1700583481772" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="retrieve json by using HttpClient">
       <option name="closed" value="true" />
@@ -147,15 +117,7 @@
       <option name="project" value="LOCAL" />
       <updated>1700079956007</updated>
     </task>
-    <task id="LOCAL-00003" summary="add &quot;not retired&quot; filter for courses">
-      <option name="closed" value="true" />
-      <created>1700584202496</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1700584202496</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +137,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="retrieve json by using HttpClient" />
     <MESSAGE value="return list of courses by jackson library" />
-    <MESSAGE value="add &quot;not retired&quot; filter for courses" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;not retired&quot; filter for courses" />
+    <option name="LAST_COMMIT_MESSAGE" value="return list of courses by jackson library" />
   </component>
 </project>
