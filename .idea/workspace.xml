@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95050019-8ca9-4b18-a8ab-cb70a9d2358d" name="Changes" comment="add &quot;not retired&quot; filter for courses">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/plrs/coursesinfo/cli/service/PluralsightCourseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="95050019-8ca9-4b18-a8ab-cb70a9d2358d" name="Changes" comment="add junit, create tests">
+      <change afterPath="$PROJECT_DIR$/course-info-cli/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info-cli/src/test/java/com/plrs/coursesinfo/cli/service/PluralsightCourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info-repository/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/CourseRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/plrs/coursesinfo/cli/CourseRetriever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/CourseRetrieverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/plrs/coursesinfo/cli/service/CourseRetrieverService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/plrs/coursesinfo/cli/service/PluralsightCourseTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +52,15 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "G:/JAVA/practice/test",
+    "jdk.selected.JAVA_MODULE": "21",
+    "last_opened_file_path": "G:/JAVA/practice/plrs-courses",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -66,7 +75,21 @@
       <recent name="com.plrs.coursesinfo.cli.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PluralsightCourseTest">
+  <component name="RunManager" selected="Application.CourseRetriever (1)">
+    <configuration name="CourseRetriever (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.plrs.coursesinfo.cli.CourseRetriever" />
+      <module name="course-info-cli" />
+      <option name="PROGRAM_PARAMETERS" value="sander-mak" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.plrs.coursesinfo.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CourseRetriever (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.plrs.coursesinfo.cli.CourseRetriever" />
       <module name="plrs-courses" />
@@ -94,6 +117,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PluralsightCourseTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="course-info-cli" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.plrs.coursesinfo.cli.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.plrs.coursesinfo.cli.service" />
+      <option name="MAIN_CLASS_NAME" value="com.plrs.coursesinfo.cli.service.PluralsightCourseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PluralsightCourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="plrs-courses" />
       <extension name="coverage">
@@ -111,6 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CourseRetriever (1)" />
+        <item itemvalue="JUnit.PluralsightCourseTest (1)" />
         <item itemvalue="JUnit.PluralsightCourseTest" />
         <item itemvalue="Application.CourseRetriever (2)" />
         <item itemvalue="Application.CourseRetriever" />
@@ -130,6 +170,7 @@
       <workItem from="1700118465717" duration="643000" />
       <workItem from="1700583481772" duration="1074000" />
       <workItem from="1700660330604" duration="2042000" />
+      <workItem from="1700763293878" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="retrieve json by using HttpClient">
       <option name="closed" value="true" />
