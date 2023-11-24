@@ -4,30 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95050019-8ca9-4b18-a8ab-cb70a9d2358d" name="Changes" comment="add junit, create tests">
-      <change afterPath="$PROJECT_DIR$/course-info-cli/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-cli/src/test/java/com/plrs/coursesinfo/cli/service/PluralsightCourseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info-repository/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="95050019-8ca9-4b18-a8ab-cb70a9d2358d" name="Changes" comment="refactoring architecture, adjust test">
+      <change afterPath="$PROJECT_DIR$/course-info-repository/src/main/java/com/plrs/courseinfo/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info-repository/src/test/java/com/plrs/courseinfo/domain/CourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info-repository/src/test/java/com/plrs/courseinfo/repository/CourseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/CourseRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/plrs/coursesinfo/cli/CourseRetriever.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/CourseRetrieverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/plrs/coursesinfo/cli/service/CourseRetrieverService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/main/java/com/plrs/coursesinfo/cli/service/PluralsightCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/plrs/coursesinfo/cli/service/PluralsightCourseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info-cli/src/test/java/com/plrs/coursesinfo/cli/service/PluralsightCourseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-cli/src/test/java/com/plrs/coursesinfo/cli/service/PluralsightCourseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info-repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info-repository/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
         <option value="Record" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -58,6 +54,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -71,11 +68,15 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\JAVA\practice\plrs-courses\course-info-cli" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.plrs.courseinfo.domain" />
       <recent name="com.plrs.coursesinfo.cli.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CourseRetriever (1)">
+  <component name="RunManager" selected="JUnit.PluralsightCourseTest (1)">
     <configuration name="CourseRetriever (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.plrs.coursesinfo.cli.CourseRetriever" />
       <module name="course-info-cli" />
@@ -104,15 +105,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseRetriever" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.plrs.coursesinfo.cli.CourseRetriever" />
-      <module name="plrs-courses" />
+    <configuration name="CourseTest.filled_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="course-info-repository" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.plrs.coursesinfo.cli.*" />
+          <option name="PATTERN" value="com.plrs.courseinfo.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.plrs.courseinfo.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.plrs.courseinfo.domain.CourseTest" />
+      <option name="METHOD_NAME" value="filled_test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CourseRetriever (1)" />
         <item itemvalue="JUnit.PluralsightCourseTest (1)" />
+        <item itemvalue="JUnit.CourseTest.filled_test" />
+        <item itemvalue="Application.CourseRetriever (1)" />
         <item itemvalue="JUnit.PluralsightCourseTest" />
         <item itemvalue="Application.CourseRetriever (2)" />
-        <item itemvalue="Application.CourseRetriever" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +174,8 @@
       <workItem from="1700118465717" duration="643000" />
       <workItem from="1700583481772" duration="1074000" />
       <workItem from="1700660330604" duration="2042000" />
-      <workItem from="1700763293878" duration="397000" />
+      <workItem from="1700763293878" duration="1419000" />
+      <workItem from="1700839576736" duration="4044000" />
     </task>
     <task id="LOCAL-00001" summary="retrieve json by using HttpClient">
       <option name="closed" value="true" />
@@ -196,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700584202496</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactoring architecture, adjust test">
+      <option name="closed" value="true" />
+      <created>1700764596460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700764596460</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +230,7 @@
     <MESSAGE value="retrieve json by using HttpClient" />
     <MESSAGE value="return list of courses by jackson library" />
     <MESSAGE value="add &quot;not retired&quot; filter for courses" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;not retired&quot; filter for courses" />
+    <MESSAGE value="refactoring architecture, adjust test" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring architecture, adjust test" />
   </component>
 </project>
